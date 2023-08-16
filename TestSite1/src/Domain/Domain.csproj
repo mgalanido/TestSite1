@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>TestSite1.Domain</RootNamespace>
+    <AssemblyName>TestSite1.Domain</AssemblyName>
+  </PropertyGroup>
+
+</Project>

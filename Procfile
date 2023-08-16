@@ -1,0 +1,1 @@
+web: dotnet ./app/TestSite1.dll

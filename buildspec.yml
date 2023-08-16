@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      dotnet: 5.0
+  pre_build:
+    commands:
+      - dotnet restore TestSite1/src/Server/Server.csproj
+  build:
+    commands:
+      - dotnet build TestSite1/src/Server/Server.csproj
+  post_build:
+    commands:
+      - dotnet publish -c Release -o ./app/ TestSite1/src/Server/Server.csproj
+artifacts:
+  files:
+    - '**/*'
